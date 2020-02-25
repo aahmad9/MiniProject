@@ -1,10 +1,10 @@
 import os
 
 #path to where data is 
-mydir = '/Users/ayeshaahmad/Desktop/COMP_388/MiniProject/'
+mydir = '/homes/aahmad9/MiniProject/'
 
 #1
-#put data from file into list
+###put data from file into list
 f = open(mydir + 'sample.txt', 'r')
 data = list(f.read().strip().split('\n'))
 f.close()
@@ -16,5 +16,14 @@ get = 'wget'
 for i in data:
     os.system(get + ' ' + str(i))
 
-
-
+#get SRR numbers
+SRR = []
+for i in data:
+    SRR.append(i[-10:])
+#make paired end fastq data
+paired = 'fastq-dump -I --split-files'
+##run on command line
+#change directory to where SRA toolkit is located 
+chdir = 'cd ' + mydir + ' ' + 'sratoolkit.2.10.3-centos_linux64'
+for i in SRR:
+    os.system(paired + ' ' + i)

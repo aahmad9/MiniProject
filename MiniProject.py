@@ -23,7 +23,5 @@ for i in data:
 #make paired end fastq data
 paired = 'fastq-dump -I --split-files'
 ##run on command line
-#change directory to where SRA toolkit is located 
-chdir = 'cd ' + mydir + ' ' + 'sratoolkit.2.10.3-centos_linux64'
 for i in SRR:
     os.system(paired + ' ' + i)

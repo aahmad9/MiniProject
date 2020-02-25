@@ -1,8 +1,8 @@
 import os
 
-#path to where data is 
-mydir = '/homes/aahmad9/MiniProject/'
-
+###path to where data is 
+##mydir = '/homes/aahmad9/MiniProject/'
+##
 #1
 ###put data from file into list
 f = open(mydir + 'sample.txt', 'r')
@@ -25,3 +25,21 @@ paired = 'fastq-dump -I --split-files'
 ##run on command line
 for i in SRR:
     os.system(paired + ' ' + i)
+
+
+#2
+#extract CDS from genbank and put into fasta file
+from Bio import Entrez
+from Bio import SeqIO
+Entrez.email = 'aahmad9@luc.edu'
+handle = Entrez.efetch(db='nucleotide',id='EF999921.1',rettype='gb', retmode='text')
+sequence = SeqIO.read(handle,'gb')
+count = 0
+for f in sequence.features:
+    count = count + 1
+    SeqIO.write(sequence, "HCMV_cds.fasta", "fasta")
+
+#build index with kallisto
+kallisto = 'kallisto index -i HCMV_cds.idx HCMV_cds.fasta'
+os.system(kallisto)
+

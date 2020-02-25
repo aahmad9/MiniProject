@@ -1,5 +1,7 @@
 import os
 
+#create log file
+log = open('miniProject.log', 'w')
 ###path to where data is 
 ##mydir = '/homes/aahmad9/MiniProject/'
 ##

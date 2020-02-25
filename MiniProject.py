@@ -2,9 +2,9 @@ import os
 
 #create log file
 log = open('miniProject.log', 'w')
-###path to where data is 
-##mydir = '/homes/aahmad9/MiniProject/'
-##
+#path to where data is 
+mydir = '/homes/aahmad9/MiniProject/'
+
 #1
 ###put data from file into list
 f = open(mydir + 'sample.txt', 'r')
@@ -24,7 +24,7 @@ for i in data:
     SRR.append(i[-10:])
 #make paired end fastq data
 paired = 'fastq-dump -I --split-files'
-##run on command line
+#run on command line
 for i in SRR:
     os.system(paired + ' ' + i)
 
@@ -38,10 +38,14 @@ handle = Entrez.efetch(db='nucleotide',id='EF999921.1',rettype='gb', retmode='te
 sequence = SeqIO.read(handle,'gb')
 count = 0
 for f in sequence.features:
-    count = count + 1
-    SeqIO.write(sequence, "HCMV_cds.fasta", "fasta")
+    if f.type == "CDS":
+        count = count + 1
+        SeqIO.write(sequence, "HCMV_cds.fasta", "fasta")
 
 #build index with kallisto
 kallisto = 'kallisto index -i HCMV_cds.idx HCMV_cds.fasta'
 os.system(kallisto)
+#write to log file 
+log.write('The HCMV genome (EF99921) has ' + str(count) + ' ' + 'CDS.' + '\n')
+
 

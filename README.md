@@ -14,5 +14,7 @@ sampleinfo.txt
 test.txt
 ```
 
+## Instructions 
+You will need the wget command to retrieve the SRA files from NCBI. Change the mydir variable to the directory in which all the downloaded software is located. The wrapper will not execute properly if all the software is not downloaded to the same directory. Additionally, all the files must be in the same directory as well. 
 
 

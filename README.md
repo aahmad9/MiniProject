@@ -7,4 +7,10 @@
 5. SPAdes: http://cab.spbu.ru/files/release3.14.0/manual.html
 
 ## Files Needed 
+```
+MiniProject.py
+```
+```
+mp.R
+```
 

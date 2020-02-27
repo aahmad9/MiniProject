@@ -1,0 +1,45 @@
+The HCMV genome (EF99921) has 168 CDS.
+
+"target_id"	"test_stat"	"pval"	"qval"
+"1"	"['ABV71604.1']"	14.8058663288888	0.000119164234539767	0.0117093829168113
+"2"	"['ABV71622.1']"	14.4990246483655	0.000140232130740256	0.0117093829168113
+"3"	"['ABV71560.1']"	13.0094839327533	0.000309917340698531	0.0154311874422261
+"4"	"['ABV71652.1']"	12.6798901698129	0.000369609280053321	0.0154311874422261
+"5"	"['ABV71626.1']"	11.8133199295032	0.000588084748467873	0.0172288449428092
+"6"	"['ABV71646.1']"	11.4313109283572	0.000722167153291402	0.0172288449428092
+"7"	"['ABV71651.1']"	11.469261959256	0.000707567748131834	0.0172288449428092
+"8"	"['ABV71649.1']"	11.1497503660432	0.000840429819276908	0.0175439724774055
+"9"	"['ABV71561.1']"	10.4406482452047	0.00123271998392656	0.0228738041461928
+"10"	"['ABV71595.1']"	10.0085965855827	0.00155811209263195	0.0260204719469535
+"11"	"['ABV71506.1']"	8.40172409427908	0.00374865309033353	0.0440877450176177
+"12"	"['ABV71519.1']"	8.64355078309844	0.00328221113267218	0.0440877450176177
+"13"	"['ABV71596.1']"	8.5711511482984	0.00341531153068117	0.0440877450176177
+"14"	"['ABV71607.1']"	8.35147586450072	0.00385374178745047	0.0440877450176177
+"15"	"['ABV71635.1']"	8.30207670055876	0.00395997709739081	0.0440877450176177
+"16"	"['ABV71507.1']"	7.96945436003376	0.00475732768397104	0.0496546077014477
+ Donor 1 (2dpi) had 2259287  read pairs before Bowtie filtering
+ and  1312790 read pairs after
+ Donor 1 (6dpi) had 2004530  read pairs before Bowtie filtering
+ and 1041195 read pairs after
+ Donor 3 (2dpi) had 2730258  read pairs before Bowtie filtering
+ and 1764133 read pairs after
+ Donor 3 (6dpi) had 2476889  read pairs before Bowtie filtering
+ and  1216629 read pairs after
+spades -k 55,77,99,127 -t 2 --only-assembler --pe1-1 SRR5660030_mapped_1.fq.gz --pe1-2 SRR5660030_mapped_2.fq.gz --pe2-1 SRR5660033_mapped_1.fq.gz --pe2-2 SRR5660033_mapped_2.fq.gz --pe3-1 SRR5660044_mapped_1.fq.gz --pe3-2 SRR5660044_mapped_2.fq.gz --pe4-1 SRR5660045_mapped_1.fq.gz --pe4-2 SRR5660045_mapped_2.fq.gz -o /homes/aahmad9/MiniProject/Assembly1
+There are 65 contigs in the assembly
+There are 65 contigs in the assembly
+There are 65 contigs in the assembly
+There are 65 contigs in the assembly
+There are 133317 bp in the assembly
+
+seq_title align_len  number_HSPs  topHSP_ident topHSP_gaps  topHSP_bits topHSP_expect 
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	12179.4	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	9957.69	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	9491.51	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	7436.58	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	7170.58	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	6725.15	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	6466.36	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	5763.05	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	5340.16	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	5267.12	0.0

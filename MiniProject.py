@@ -1,8 +1,8 @@
 import os
 
 
-#path to where output file will be stored
-mydir = '/homes/aahmad9/MiniProject/miniProject_Ayesha_Ahmad/'
+#specify path to where output file will be stored
+mydir = '.../miniProject_Ayesha_Ahmad/'
 #create file for outputs
 os.system('mkdir miniProject_Ayesha_Ahmad')
 #copy files to new directory

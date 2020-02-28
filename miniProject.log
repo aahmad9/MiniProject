@@ -33,13 +33,14 @@ There are 65 contigs in the assembly
 There are 133317 bp in the assembly
 
 seq_title align_len  number_HSPs  topHSP_ident topHSP_gaps  topHSP_bits topHSP_expect 
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	12179.4	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	9957.69	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	9491.51	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	7436.58	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	7170.58	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	6725.15	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	6466.36	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	5763.05	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	5340.16	0.0
-gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	0	5267.12	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	6753	0	12179.4	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	5521	0	9957.69	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	5264	0	9491.51	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	4123	0	7436.58	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	3977	0	7170.58	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	3730	0	6725.15	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	3585	0	6466.36	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	3195	0	5763.05	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	2962	0	5340.16	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	None	2920	0	5267.12	0.0
+

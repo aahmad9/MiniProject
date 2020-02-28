@@ -36,12 +36,12 @@ paired = 'fastq-dump -I --split-files'
 #run on command line
 for i in SRR:
     os.system(paired + ' ' + i)
-#make sample data of only the first 300000 lines of fastq files
+#make sample data of only the first 50000 lines of fastq files
 one = '_1.fastq'
 two = '_2.fastq'
 for i in SRR:
-    os.system('head -n 300000 ' + i + one + ' > ' + i + '_s_1.fastq')
-    os.system('head -n 300000 ' + i + two + ' > ' + i + '_s_2.fastq')
+    os.system('head -n 50000 ' + i + one + ' > ' + i + '_s_1.fastq')
+    os.system('head -n 50000 ' + i + two + ' > ' + i + '_s_2.fastq')
 
 
 #2
@@ -75,7 +75,7 @@ os.system('mkdir ' + mydir + 'results')
 o = '_s_1.fastq'
 t = '_s_2.fastq'
 for i in SRR:
-    os.system(kallisto + mydir + ' results/' + i + ' -b 30 ' + '-t 4 ' + i + o + ' '
+    os.system(kallisto + mydir + 'results/' + i + ' -b 30 ' + '-t 4 ' + i + o + ' '
               + i + t)
 #Run R script  
 os.system('Rscript mp.R')
@@ -108,7 +108,7 @@ for i in SRR:
 
 #5
 #Run spades
-spades = 'spades -k 55,77,99,127 -t 2 --only-assembler --pe1-1 SRR5660030_mapped_1.fq.gz --pe1-2 SRR5660030_mapped_2.fq.gz --pe2-1 SRR5660033_mapped_1.fq.gz --pe2-2 SRR5660033_mapped_2.fq.gz --pe3-1 SRR5660044_mapped_1.fq.gz --pe3-2 SRR5660044_mapped_2.fq.gz --pe4-1 SRR5660045_mapped_1.fq.gz --pe4-2 SRR5660045_mapped_2.fq.gz -o Assembly1'
+spades = 'spades -k 55,77,99,127 -t 4 --only-assembler --pe1-1 SRR5660030_mapped_1.fq.gz --pe1-2 SRR5660030_mapped_2.fq.gz --pe2-1 SRR5660033_mapped_1.fq.gz --pe2-2 SRR5660033_mapped_2.fq.gz --pe3-1 SRR5660044_mapped_1.fq.gz --pe3-2 SRR5660044_mapped_2.fq.gz --pe4-1 SRR5660045_mapped_1.fq.gz --pe4-2 SRR5660045_mapped_2.fq.gz -o Assembly1'
 os.system( "'" + spades + "'" )
 os.system('echo ' + "'" + spades + "' >> miniProject.log")
 

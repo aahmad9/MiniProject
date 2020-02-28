@@ -2,8 +2,8 @@
 library(sleuth)
 
 #directory 
-mydir <- "/home/aahmad9/MiniProject"
-#specify wher kallisto results are stored
+mydir <- "/home/aahmad9/MiniProject/miniProject_Ayesha_Ahmad"
+#specify where kallisto results are stored
 sample_id <- dir(file.path(mydir,"results"))
 #list of paths to kallisto results
 kal_dirs <- file.path(mydir, "results", sample_id)

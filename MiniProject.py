@@ -109,7 +109,7 @@ for i in SRR:
 #5
 #Run spades
 spades = 'spades -k 55,77,99,127 -t 4 --only-assembler --pe1-1 SRR5660030_mapped_1.fq.gz --pe1-2 SRR5660030_mapped_2.fq.gz --pe2-1 SRR5660033_mapped_1.fq.gz --pe2-2 SRR5660033_mapped_2.fq.gz --pe3-1 SRR5660044_mapped_1.fq.gz --pe3-2 SRR5660044_mapped_2.fq.gz --pe4-1 SRR5660045_mapped_1.fq.gz --pe4-2 SRR5660045_mapped_2.fq.gz -o Assembly1'
-os.system( "'" + spades + "'" )
+os.system(spades)
 os.system('echo ' + "'" + spades + "' >> miniProject.log")
 
 #6 and 7

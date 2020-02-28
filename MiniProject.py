@@ -166,7 +166,7 @@ for i, blast_record in enumerate(blast_records):
     if i == 10: break
     for alignment in blast_record.alignments:
         for hsp in alignment.hsps:
-            p.write(str(alignment.title) + '\t' + str(alignment.length) + '\t' + str(hsp.num_alignments) + '\t' + str(hsp.gaps) + '\t' + str(hsp.bits) + '\t' + str(hsp.expect) + '\n')
+            p.write(str(alignment.title) + '\t' + str(alignment.length) + '\t' + str(hsp.num_alignments) + '\t'+ str(hsp.identities) + '\t' + str(hsp.gaps) + '\t' + str(hsp.bits) + '\t' + str(hsp.expect) + '\n')
 p.close()
 
 os.system("sed -n '1,11p' tophits.txt > th.txt")
